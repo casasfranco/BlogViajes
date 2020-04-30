@@ -1,4 +1,8 @@
-.bg-edited{
+.bgEdited{
     background-color: #B3C2C3;
     font-size: 22px;
+}
+
+.buttonBgColor{
+    background-color: #FA6980;
 }
