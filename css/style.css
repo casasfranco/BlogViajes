@@ -2,14 +2,6 @@ html {
   scroll-behavior: smooth;
 }
 
-.bgEdited {
-  background-color: #b3c2c3;
-  font-size: 22px;
-}
-
-.buttonBgColor {
-  background-color: #fa6980;
-}
 .navbar {
   padding: 30px;
   background-color: #040740;
@@ -21,13 +13,38 @@ html {
   border-radius: 5%;
 }
 
-.opaque:hover {
-  filter: opacity(85%);
+.grayBlur:hover {
+  filter: grayscale(0.2) blur(5px);
+}
+
+
+.bg-lightGrey{
+  background-color: rgba(96, 96, 96, 0.461);
 }
 
 .shadow-warning {
   filter: drop-shadow(8px 8px 10px rgb(255, 225, 0));
 }
+
+.texto_responsive:before {
+  /* attr() value linked to the HTML attribute value */
+  content: attr(data-desktoptext);
+}
+
+
+
+/*FOOTER*/
+.piedepagina {
+  background-color: #040740;
+}
+
+
+
+
+
+
+
+
 
 /*Nuevo*/
 /*Floating Back-To-Top Button*/
@@ -39,10 +56,9 @@ html {
   max-width: 50px;
   width: 100%;
   font-size: 25px;
-  padding: .5px;
+  padding: 0.5px;
   border-radius: 4px;
   text-decoration: none;
-
 }
 /*On Hover Color Change*/
 #myBtn:hover {
@@ -78,10 +94,15 @@ html {
 
 /*FIN*/
 
-/*FOOTER*/
-.piedepagina {
-  background-color: #040740;
-}
+
+
+
+
+
+
+
+
+
 
 /* Responsive rules */
 
@@ -93,16 +114,33 @@ html {
   #title-sm {
     font-size: 45px;
   }
+
+  .texto_responsive:before {
+    /* attr() value linked to the HTML attribute value */
+    content: attr(data-tablettext);
+  }
 }
 
 @media (min-width: 869px) and (max-width: 991px) {
   #b-items {
     font-size: 15px;
   }
+  .texto_responsive:before {
+    /* attr() value linked to the HTML attribute value */
+    content: attr(data-tablettext);
+  }
 }
 
 @media all and (max-width: 480px) {
   #title-sm {
     font-size: 45px;
+  }
+}
+
+
+@media all and (max-width: 767px) {
+  .texto_responsive:before {
+    /* attr() value linked to the HTML attribute value */
+    content: attr(data-phonetext);
   }
 }

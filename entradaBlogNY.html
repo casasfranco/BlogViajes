@@ -15,7 +15,6 @@
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <!--Fontawesome-->
   <script src="https://kit.fontawesome.com/5123056da0.js" crossorigin="anonymous"></script>
-
   <!-- Custom styles for this template -->
   <link href="css/style.css" rel="stylesheet">
 
@@ -24,46 +23,47 @@
 <body>
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark navstyle ">
-    <div class="container">
-      <img class="mr-2" src="img/logo.png" width="30" height="30" alt="Logo">
-      <a class="navbar-brand" href="index.html">Travel the World</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="container">
+        <img class="mr-2" src="img/logo.png" width="30" height="30" alt="Logo">
+        <a class="navbar-brand" href="index.html">Travel the World</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
 
-          <li class="nav-item active" id="navitem">
-            <a class="nav-link" href="login.html">Login</a>
-          </li>
-          <li class="nav-item active" id="navitem">
-            <a class="nav-link" href="aboutus.html">Sobre Nosotros</a>
-          </li>
-          <li class="nav-item active" id="navitem">
-            <a class="nav-link" href="contacto.html">Contacto</a>
-          </li>
-          <li class="nav-item active" id="navitem">
-            <a class="nav-link" href="galeria.html">Galeria de Fotos</a>
-          </li>
-
-          <button type="button" class="btn btn-light" data-toggle="modal" data-target="#exampleModal">
-            Suscripción
-          </button>
-        </ul>
+            <li class="nav-item active" id="navitem">
+              <a class="nav-link" href="login.html">Login</a>
+            </li>
+            <li class="nav-item active" id="navitem">
+              <a class="nav-link" href="aboutus.html">Sobre Nosotros</a>
+            </li>
+            <li class="nav-item active" id="navitem">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item active" id="navitem">
+              <a class="nav-link" href="galeria.html">Galería de fotos</a>
+            </li>
+            <button type="button" class="btn btn-light" data-toggle="modal" data-target="#example-modal">
+              Suscripción
+            </button>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </header>
+  <!--BreadCrumb-->
   <nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="#">Home</a></li>
-      <li class="breadcrumb-item active"><a href="entradaBlogNY.html">New York</a></li>
-
+    <ol class="breadcrumb text-dark">
+      <li class="breadcrumb-item"><a href="#"><i class="fas fa-home pr-2"></i>Inicio</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Entrada New York</li>
     </ol>
   </nav>
-
+  <!--BreadCrumb ends-->
   <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
     aria-hidden="true">
@@ -96,47 +96,29 @@
     </div>
   </div>
 
-
-  </div>
-
   <!-- Page Content -->
   <div class="container">
-
     <div class="row">
-
-
       <!-- Post Content Column -->
-      <div class="col col-lg-8 col-md-8">
-
+      <div class="col col-lg-8 col-md-7">
         <!-- Title -->
-        <h1 class="mt-4">Que Visitar  en New York?</h1>
-
+        <h1 class="mt-4">Que Visitar en New York?</h1>
         <!-- Author -->
         <p class="lead">
           by
           <a href="sobrenosotros.html">Nosotros</a>
         </p>
-
-        <hr>
-
-      
-
-        
-        <!-- Date/Time -->
-        
-        <div class="d-flex align-items-center flex-wrap">    
-          <i class="far fa-clock p-2 font-weight-bold">1 month ago</i>   
-          <i class="far fa-eye p-2 separadores">200 views</i>
-          <i class="far fa-comments p-2">12</i>
+        <!-- Widgets -->
+        <i class="far fa-clock mr-3"><span class="pl-2">Hace 1 hora</span></i>
+        <span class="badge badge-success">Nuevo!</span>
+        <div class="mt-2">
+          <i class="far fa-eye separadores mr-4"> 273 views</i>
+          <i class="far fa-comments p-2"> 4</i>
         </div>
-
         <hr>
-
         <!-- Preview Image -->
-        <img class="img-fluid rounded" src="img/1.png" alt="New York Landscapes">
-
-        <hr>
-
+        <img class="img-fluid rounded" src="img/blog/1.png" alt="New York Landscapes">
+        <h3 class="display-4 mt-4">Introducción</h3>
         <!-- Post Content -->
         <p class="lead">¿Qué ver en Nueva York en un primer viaje? Mirando el mapa de la Gran Manzana, seguro que te
           surgirán mil dudas: ¿qué es lo indispensable? ¿Dónde están los lugares más típicos?. No te preocupes, hemos
@@ -149,10 +131,8 @@
           Las posibilidades son infinitas, pero algo está claro: una de las cosas que tienes que hacer en Nueva York sí
           o sí es perderte una o más veces por Central Park, el parque más querido por sus habitantes… ¡Y un oasis
           espectacular en mitad de la jungla de asfalto!</p>
-        <hr>
         <!-- Preview Image -->
-        <img class="img-fluid rounded" src="img/central-park-de-nueva-york.jpg" alt="">
-        <hr>
+        <img class="img-fluid rounded" src="img/blog/central-park-de-nueva-york.jpg" alt="">
         <blockquote class="blockquote shadow p-3 mb-5 bg-white rounded">
           <p class="mb-0">Mientras que otros lugares tienden a quedarse estancados, Nueva York siempre continúa
             evolucionando.</p>
@@ -168,9 +148,8 @@
           inolvidable!
           Comienza por el maravilloso Top of the Rock, en el mítico Rockefeller Center, y acertarás. Aunque el Empire
           State Building, el Edge y el One World también te dejarán boquiabierto.</p>
-        <hr>
         <!-- Preview Image -->
-        <img class="img-fluid rounded" src="img/top}.jpg" alt="">
+        <img class="img-fluid rounded" src="img/blog/top}.jpg" alt="">
         <hr>
 
         <!--Titulo-->
@@ -181,9 +160,8 @@
           al anochecer, cuando los rascacielos se iluminan.
           Y, aunque este ferry no para en Liberty Island, sí que verás la Estatua de la Libertad (y lo bien que se
           conserva para su edad) más cerca que desde otros lugares de Nueva York.</p>
-        <hr>
         <!-- Preview Image -->
-        <img class="img-fluid rounded" src="img/Staten-Island-Ferry.jpg" alt="">
+        <img class="img-fluid rounded" src="img/blog/Staten-Island-Ferry.jpg" alt="">
         <hr>
 
         <!--Titulo-->
@@ -193,9 +171,8 @@
           Recórrela y disfruta de la naturaleza entre rascacielos, del arte y el buen ambiente. La High Line te llevará
           hasta el barrio de Hudson Yards, donde puedes subir a la futurista escultura del Vessel (gratis) o al nuevo
           observatorio Edge..</p>
-        <hr>
         <!-- Preview Image -->
-        <img class="img-fluid rounded" src="img/vessel.jpg" alt="">
+        <img class="img-fluid rounded" src="img/blog/vessel.jpg" alt="">
         <hr>
 
         <!--Titulo-->
@@ -204,10 +181,9 @@
           recorriéndolos y todavía te quedarían rincones y obras por descubrir.
           Pero, si tienes tiempo, la ciudad está llena de museos increíbles: el Whitney, el Guggenheim, los Cloisters,
           el Museo Intrepid del Aire y el Espacio, la Morgan Library… ¡Por nombrar solo algunos!</p>
-        <hr>
         <!-- Preview Image -->
-        <img class="img-fluid rounded my-4" src="img/fachada-met-quinta-avenida.webp" alt="">
-        <img class="img-fluid rounded" src="img/moma.jpg" alt="">
+        <img class="img-fluid rounded my-4" src="img/blog/fachada-met-quinta-avenida.webp" alt="">
+        <img class="img-fluid rounded" src="img/blog/moma.jpg" alt="">
         <hr>
 
         <!--Titulo-->
@@ -217,9 +193,8 @@
           callejeros no descansan…
           Pasar por Times Square y sentir su pulso y su bullicio, sobre todo de noche, es una de las cosas que hacer en
           Nueva York sí o sí. Pero lo de regresar o no… ¡ya lo dejamos a tu elección!</p>
-        <hr>
         <!-- Preview Image -->
-        <img class="img-fluid rounded" src="img/times-square.jpg" alt="">
+        <img class="img-fluid rounded" src="img/blog/times-square.jpg" alt="">
         <hr>
 
         <!--Titulo-->
@@ -228,9 +203,8 @@
           teatro que emocionan al público.
           Por eso, entre las cosas que hacer en Nueva York te recomendamos sin dudar ir a un musical de Broadway, una
           experiencia increíble.</p>
-        <hr>
         <!-- Preview Image -->
-        <img class="img-fluid rounded" src="img/broadway.jpg" alt="">
+        <img class="img-fluid rounded" src="img/blog/broadway.jpg" alt="">
         <hr>
 
         <!--Titulo-->
@@ -242,7 +216,7 @@
           Y, muy cerca, tienes el también precioso edificio Chrysler, cuyo vestíbulo puede visitarse.</p>
         <hr>
         <!-- Preview Image -->
-        <img class="img-fluid rounded" src="img/grand central terminal.webp" alt="">
+        <img class="img-fluid rounded" src="img/blog/grand central terminal.webp" alt="">
         <hr>
 
         <!--Titulo-->
@@ -253,9 +227,8 @@
           del skyline de Manhattan desde el río East River o desde el mercado Time Out.
           Si prefieres cruzar de Manhattan a Brooklyn sin multitudes, también tendrás buenas vistas desde el puente de
           Manhattan y el Williamsburg Bridge.</p>
-        <hr>
         <!-- Preview Image -->
-        <img class="img-fluid rounded" src="img/puente-de-brooklyn.jpg" alt="">
+        <img class="img-fluid rounded" src="img/blog/puente-de-brooklyn.jpg" alt="">
         <hr>
 
         <!--Titulo-->
@@ -266,10 +239,8 @@
 
           ¿Y qué te parecería sobrevolar la Gran Manzana como un pájaro? ¡El paseo en helicóptero por Nueva York es una
           de las experiencias más asombrosas que puedes vivir!</p>
-        <hr>
         <!-- Preview Image -->
-        <img class="img-fluid rounded" src="img/tour10.jpg" alt="">
-        <hr>
+        <img class="img-fluid rounded" src="img/blog/tour10.jpg" alt="">
         <blockquote class="blockquote shadow p-3 mb-5 bg-white rounded">
           <p class="mb-0">There is something in the New York air that makes sleep useless.</p>
           <footer class="blockquote-footer">Simone de Beauvoir.
@@ -285,9 +256,8 @@
           el precioso mercadillo navideño, ver el árbol de Navidad encendido y patinar sobre hielo.
           Además, justo al lado tienes la sede de la New York Public Library de la 5ª Avenida, otro de los lugares
           imprescindibles de la ciudad.</p>
-        <hr>
         <!-- Preview Image -->
-        <img class="img-fluid rounded" src="img/New-York_-_Bryant_Park.jpg" alt="">
+        <img class="img-fluid rounded" src="img/blog/New-York_-_Bryant_Park.jpg" alt="">
         <hr>
         <!--Titulo-->
         <p class="lead">12. Redescubre el World Trade Center</p>
@@ -296,9 +266,8 @@
           Por un lado, los monumentos y museos recuerdan a los desaparecidos en el trágico 11-S.
           Pero, por el otro, el área no deja de avanzar, con rascacielos como el observatorio One World o la futurista
           estación y centro comercial Oculus.</p>
-        <hr>
         <!-- Preview Image -->
-        <img class="img-fluid rounded" src="img/memorial.jpg" alt="">
+        <img class="img-fluid rounded" src="img/blog/memorial.jpg" alt="">
         <hr>
 
         <!--Titulo-->
@@ -308,9 +277,8 @@
           ¡Cualquier excusa es buena para visitar el mercado de Chelsea! Y no es el único mercado de Manhattan donde
           comer: en el vecino Gansevoort Market, en el Gotham West Market o en el Canal St Market, por poner solo
           algunos ejemplos, también podrás elegir entre puestos de comida estupendos.</p>
-        <hr>
         <!-- Preview Image -->
-        <img class="img-fluid rounded" src="img/chelsea.jpg" alt="">
+        <img class="img-fluid rounded" src="img/blog/chelsea.jpg" alt="">
         <hr>
 
         <!--Titulo-->
@@ -319,9 +287,8 @@
           experiencia típica que disfrutarás al máximo incluso si los deportes no te apasionan.
           Desde el momento en el que suena el himno hasta que los aficionados se marchan a casa, ¡en el estadio vivirás
           una experiencia animadísima y 100 % americana!</p>
-        <hr>
         <!-- Preview Image -->
-        <img class="img-fluid rounded" src="img/madison-square-garden-arena-bowl-knicks.webp" alt="">
+        <img class="img-fluid rounded" src="img/blog/madison-square-garden-arena-bowl-knicks.webp" alt="">
         <hr>
 
         <!--Titulo-->
@@ -333,9 +300,8 @@
           Inmigración.
           Aun así, te lo recomendamos solo si tienes más de una semana en la ciudad, ya que es un lugar muy concurrido y
           se tardan varias horas en visitar ambas islas.</p>
-        <hr>
         <!-- Preview Image -->
-        <img class="img-fluid rounded" src="img/estatua-de-la-libertad-estados-unidos-de-america.jpg" alt="">
+        <img class="img-fluid rounded" src="img/blog/estatua-de-la-libertad-estados-unidos-de-america.jpg" alt="">
         <hr>
 
         <!--Titulo-->
@@ -346,9 +312,8 @@
           tiendas tan selectas como Tiffany’s (la tienda de Desayuno con diamantes) o Saks 5th Ave.
           También allí encontrarás locales alucinantes, como el de Apple o el de Abercrombie, y la majestuosa catedral
           de St Patrick.</p>
-        <hr>
         <!-- Preview Image -->
-        <img class="img-fluid rounded" src="img/rockefeller-center.jpg" alt="">
+        <img class="img-fluid rounded" src="img/blog/rockefeller-center.jpg" alt="">
         <hr>
 
         <!--Titulo-->
@@ -357,9 +322,8 @@
           electrónica, moda, papelería, golosinas… ¡Sigue el enlace y conoce las mejores tiendas de Nueva York!
           Además, si te apetece una jornada intensiva buscando chollos en ropa, una buena opción es visitar alguno de
           los outlets de Nueva York, como Woodbury Common, Jersey Gardens o Empire Outlets, en Staten Island.</p>
-        <hr>
         <!-- Preview Image -->
-        <img class="img-fluid rounded" src="img/Jersey-Gardens.jpg" alt="">
+        <img class="img-fluid rounded" src="img/blog/Jersey-Gardens.jpg" alt="">
         <hr>
 
         <!--Titulo-->
@@ -369,9 +333,8 @@
           Allí encontrarás una de las plazas más carismáticas de la ciudad, Washington Square. No solo verás el famoso
           arco, sino que también disfrutarás de los artistas callejeros, los músicos y el buen ambiente que siempre
           inunda la plaza. ¡Un lugar genial para un descanso!</p>
-        <hr>
         <!-- Preview Image -->
-        <img class="img-fluid rounded" src="img/washington-square.jpg" alt="">
+        <img class="img-fluid rounded" src="img/blog/washington-square.jpg" alt="">
         <hr>
 
         <!--Titulo-->
@@ -380,9 +343,8 @@
           hamburguesa, un pizza slice, un bagel con cream cheese…
           Si llevas un goloso incurable dentro, también tienes que probar los mejores dónuts o los mejores cupcakes. Y,
           para terminar el día con buen pie, ¿qué tal un cóctel en un rooftop con vistas increíbles?</p>
-        <hr>
         <!-- Preview Image -->
-        <img class="img-fluid rounded" src="img/shake-shack.jpg" alt="">
+        <img class="img-fluid rounded" src="img/blog/shake-shack.jpg" alt="">
         <hr>
 
         <!--Titulo-->
@@ -394,10 +356,8 @@
           Te recomendamos empezar por Brooklyn, un distrito con barrios tan modernos como Williamsburg o Dumbo, y otros
           con tanto encanto como Park Slope, Cobble Hill, Carroll Gardens, Greenpoint… Otra opción para una primera
           aproximación es el Tour de Contrastes de Nueva York (o el Tour de Contrastes VIP).</p>
-        <hr>
         <!-- Preview Image -->
-        <img class="img-fluid rounded" src="img/contrastes.jpg" alt="">
-        <hr>
+        <img class="img-fluid rounded" src="img/blog/contrastes.jpg" alt="">
         <blockquote class="blockquote shadow p-3 mb-5 bg-white rounded">
           <p class="mb-0">Cien veces he pensado que Nueva York es una catástrofe, y 50 veces que es una hermosa
             catástrofe.</p>
@@ -466,14 +426,14 @@
       </div>
 
       <!-- Sidebar Widgets Column -->
-      <div class="col col-lg-4 col-md-4 col-sm-12 ">
+      <div class="col col-lg-4 col-md-5 col-sm-12 ">
 
         <!-- Search Widget -->
         <div class="card my-4">
           <h5 class="card-header">Buscar</h5>
           <div class="card-body">
             <div class="input-group">
-              <input type="text" class="form-control" placeholder="Que desea buscar?...">
+              <input type="text" class="form-control mr-3" placeholder="Que desea buscar?...">
               <span class="input-group-btn">
                 <button class="btn btn-secondary" type="button">Ir!</button>
               </span>
@@ -546,58 +506,50 @@
         <div class="card my-4">
           <h5 class="card-header">Mapa Interactivo</h5>
           <div class="card-body">
-            <iframe src="https://www.google.com/maps/d/embed?mid=1NCkuEgzSUOoNWmFi3TmBtVgJWWg" width="300"
-              height="350"></iframe>
-
+            <iframe class="w-100" src="https://www.google.com/maps/d/embed?mid=1NCkuEgzSUOoNWmFi3TmBtVgJWWg"
+              height="400px"></iframe>
           </div>
         </div>
         <div class="card my-4">
           <h5 class="card-header">Aprovecha Nuestros Descuentos!</h5>
           <div class="card-body">
-            <a href="https://es.newyorkpass.com/"><img src="img/new york pass.jpg" class="img-fluid rounded my-4"
+            <a href="https://es.newyorkpass.com/"><img src="img/blog/new york pass.jpg" class="img-fluid rounded my-2"
                 alt="New York Pass Imagen"></a>
-            <a href="#"> <img src="img/uber.png" class="img-fluid rounded my-4" alt="Uber Logo"></a>
+            <a href="#"> <img src="img/blog/uber.png" class="img-fluid rounded my-2" alt="Uber Logo"></a>
 
           </div>
         </div>
-
-
-
-
-
       </div>
-
     </div>
-
   </div>
   <!-- /.row -->
-
   </div>
   <!-- /.container -->
-  <button id="myBtn"><a href="#top">TOP </a></button>
-  <!-- Footer -->
-  <footer class="text-light py-4 piedepagina">
+  <a href="#top" id="myBtn"><i class="fas fa-arrow-circle-up fa-2x"></i></a>
+  <!--Footer-->
+  <footer class="text-light py-4 piedepagina text-center">
     <div class="container">
       <div class="row">
         <div class="col-sm-12 col-md-4 text-center">
           <a href="#" class="text-decoration-none">
-            <img src="img/" alt="Logo la cual no hay" width="100px">
+            <img src="img/logo.png" alt="Logo" width="30" height="30">
+            <p class="lead text-decoration-none text-light">Travel the World</p>
           </a>
         </div>
         <div class="col-sm-12 col-md-4">
-          <p><strong>Informacion Basica</strong></p>
+          <p><strong>Informacion Básica</strong></p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, similique!</p>
         </div>
         <div class="col-sm-12 col-md-4">
           <p><strong>Encontranos En:</strong></p>
           <a href="#" class="text-decoration-none text-light">
-            <i class="fab fa-facebook-f fa-2x p-2"></i>
+            <i class="fab fa-facebook-f fa-2x p-2 facebook"></i>
           </a>
           <a href="#" class="text-decoration-none text-light">
-            <i class="fab fa-twitter fa-2x p-2"></i>
+            <i class="fab fa-twitter fa-2x p-2 twitter"></i>
           </a>
           <a href="#" class="text-decoration-none text-light">
-            <i class="fab fa-instagram fa-2x p-2"></i>
+            <i class="fab fa-instagram fa-2x p-2 instagram"></i>
           </a>
         </div>
       </div>

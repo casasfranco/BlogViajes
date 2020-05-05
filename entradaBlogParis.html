@@ -23,45 +23,49 @@
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark navstyle">
-        <div class="container">
-            <img src="img/logo1.png" width="30" height="30" alt="">
-            <a class="navbar-brand" href="index.html">Travel the World</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark ">
+            <div class="container">
+                <img class="mr-2" src="img/logo.png" width="30" height="30" alt="Logo">
+                <a class="navbar-brand" href="index.html">Travel the World</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
 
-                    <li class="nav-item active" id="navitem">
-                        <a class="nav-link" href="login.html">Login</a>
-                    </li>
-                    <li class="nav-item active" id="navitem">
-                        <a class="nav-link" href="aboutus.html">Sobre Nosotros</a>
-                    </li>
-                    <li class="nav-item active" id="navitem">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
-                    </li>
-                    <li class="nav-item active" id="navitem">
-                        <a class="nav-link" href="galeria.html">Galeria de Fotos</a>
-                    </li>
-                    <button type="button" class="btn btn-light" data-toggle="modal" data-target="#exampleModal">
-                        Suscripción
-                    </button>
-                </ul>
+                        <li class="nav-item active" id="navitem">
+                            <a class="nav-link" href="login.html">Login</a>
+                        </li>
+                        <li class="nav-item active" id="navitem">
+                            <a class="nav-link" href="aboutus.html">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item active" id="navitem">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item active" id="navitem">
+                            <a class="nav-link" href="galeria.html">Galería de fotos</a>
+                        </li>
+                        <button type="button" class="btn btn-light" data-toggle="modal" data-target="#example-modal">
+                            Suscripción
+                        </button>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
+    <!--BreadCrumb-->
     <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item active"><a href="entradaBlogParis.html">Paris</a></li>
-
+        <ol class="breadcrumb text-dark">
+            <li class="breadcrumb-item"><a href="#"><i class="fas fa-home pr-2"></i>Inicio</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Entrada Paris</li>
         </ol>
     </nav>
-
+    </section>
+    <!--BreadCrumb ends-->
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true" id="#Modal">
@@ -94,35 +98,30 @@
             </div>
         </div>
     </div>
-
     <!-- Page Content -->
     <div class="container">
-
         <div class="row">
-
             <!-- Post Content Column -->
-            <div class="col col-lg-8 col-md-8">
-
+            <div class="col col-lg-8 col-md-7">
                 <!-- Title -->
                 <h1 class="mt-4">Que hacer en Paris?</h1>
-
                 <!-- Author -->
                 <p class="lead">
                     by
                     <a href="sobrenosotros.html">author</a>
                 </p>
-
+                <!-- Widgets -->
+                <i class="far fa-clock mr-3"><span class="pl-2">Hace 1 hora</span></i>
+                <span class="badge badge-success">Nuevo!</span>
+                <div class="mt-2">
+                    <i class="far fa-eye separadores mr-4"> 273 views</i>
+                    <i class="far fa-comments p-2"> 4</i>
+                </div>
                 <hr>
-
-                <!-- Date/Time -->
-                <p>20 de Abril 12:00 P.M</p>
-
-                <hr>
-
                 <!-- Preview Image -->
-                <img class="img-fluid rounded" src="img/pariis.jpg" alt="Imagen de Paris">
 
-                <hr>
+                <img class="img-fluid rounded" src="img/blog/pariis.jpg" alt="Imagen de Paris">
+                <h3 class="display-4 mt-4">Introducción</h3>
 
                 <!-- Post Content -->
                 <p class="lead">Esta lista de los mejores lugares que visitar en París, te ayudará a preparar tu viaje y
@@ -137,7 +136,8 @@
                     Eiffel o ir de compras por sus elegantes galerías.</p>
                 <hr>
                 <!--Titulo-->
-                <p class="lead">1. Torre Eiffel</p>
+                <p class="lead">1. Torre Eiffel <span class="badge badge-warning ml-2">Popular!</span></p>
+
                 <p>La Torre Eiffel fue creada para la Exposición Universal de París del año 1889 y aunque no gustó en un
                     principio a los parisinos por su diseño, con el paso del tiempo se ha convertido en el símbolo de la
                     ciudad y en el monumento más visitado del mundo con más de 7 millones de personas al año.
@@ -149,10 +149,8 @@
                     edificio de cerca y disfrutar de unas espectaculares vistas panorámicas de toda la ciudad o
                     disfrutar de uno de los mejores restaurantes de París «Le 58 Tour Eiffel«, perfecto para una ocasión
                     especial.</p>
-                <hr>
                 <!-- Preview Image -->
-                <img class="img-fluid rounded" src="img/torre eiffel.jpg" alt="Camden Town view">
-                <hr>
+                <img class="img-fluid rounded" src="img/blog/torre eiffel.jpg" alt="Camden Town view">
                 <!--Cita-->
                 <blockquote class="blockquote shadow p-3 mb-5 bg-white rounded">
                     <p class="mb-0">En París, a uno siempre le recuerdan que es extranjero. Si estacionas mal tu coche,
@@ -173,9 +171,8 @@
                     Además de su increíble estructura, en 1989 se construyó una pirámide de cristal en el centro de la
                     plaza, que actúa como entrada, y que merece la pena ver de noche iluminada. Una imagen que estamos
                     seguros, te quedará para siempre en la memoria.</p>
-                <hr>
                 <!-- Preview Image -->
-                <img class="img-fluid rounded" src="img/louvre.webp" alt="">
+                <img class="img-fluid rounded" src="img/blog/louvre.webp" alt="">
                 <hr>
 
                 <!--Titulo-->
@@ -187,9 +184,8 @@
                     realza sus impresionantes vidrieras de la capilla superior, donde te quedarás sin palabras frente a
                     tanta belleza. La capilla inferior es más sobria y tiene un fresco de la Anunciación del XIII,
                     considerado el mural más antiguo de la ciudad.</p>
-                <hr>
                 <!-- Preview Image -->
-                <img class="img-fluid rounded" src="img/sainte chapelle.jpg" alt="">
+                <img class="img-fluid rounded" src="img/blog/sainte chapelle.jpg" alt="">
                 <hr>
 
                 <!--Titulo-->
@@ -203,9 +199,8 @@
                     Esta iglesia, que se construyó entre 1875 y 1914, destaca por su fachada blanca, la mezcla de
                     arquitectura romana y bizantina y por sus escaleras, donde podrás vivir una de las cosas que hacer
                     en París: disfrutar de un atardecer inolvidable, con unas magníficas vistas de la ciudad. </p>
-                <hr>
                 <!-- Preview Image -->
-                <img class="img-fluid rounded" src="img/montmarte.jpg" alt="">
+                <img class="img-fluid rounded" src="img/blog/montmarte.jpg" alt="">
                 <hr>
 
                 <!--Titulo-->
@@ -218,10 +213,9 @@
                     una vez delante, ver la conmovedora Tumba al Soldado Desconocido de la Primera Guerra Mundial.
                     Además de ser un símbolo de París y de toda Francia, este Arco de Triunfo es un excelente mirador
                     con las mejores vistas a la gran avenida de los Campos Elíseos.</p>
-                <hr>
                 <!-- Preview Image -->
 
-                <img class="img-fluid rounded" src="img/Arco-del-Triunfo.jpg" alt="">
+                <img class="img-fluid rounded" src="img/blog/Arco-del-Triunfo.jpg" alt="">
                 <hr>
 
                 <!--Titulo-->
@@ -233,9 +227,8 @@
                     puentes más bonitos como el Puente Nuevo, el Puente de las Almas, el Puente de Alejandro III y el
                     Puente de las Artes, que tiene buenas vistas la Île de la Cité, aunque nuestro favorito es Le Pont
                     Neuf de finales del siglo XVI, que es el más antiguo y une la Île de la Cité con la ciudad.</p>
-                <hr>
                 <!-- Preview Image -->
-                <img class="img-fluid rounded" src="img/rio sena.webp" alt="">
+                <img class="img-fluid rounded" src="img/blog/rio sena.webp" alt="">
                 <hr>
 
                 <!--Titulo-->
@@ -249,9 +242,8 @@
                     incendio, nos quedamos con el recuerdo de su luminoso interior gracias a sus amplios ventanales y la
                     subida a sus dos torres, en la que se encuentran sus famosas y misteriosas quimeras o gárgolas y
                     desde donde podías disfrutar de unas vistas para el recuerdo.</p>
-                <hr>
                 <!-- Preview Image -->
-                <img class="img-fluid rounded" src="img/Notre Dame.webp" alt="">
+                <img class="img-fluid rounded" src="img/blog/Notre Dame.webp" alt="">
                 <hr>
 
                 <!--Titulo-->
@@ -261,11 +253,10 @@
                     en la planta 56 y una espectacular terraza en la 59, protegida con cristales, aunque con espacios
                     para hacer fotos al aire libre, desde la que tendrás unas impresionantes vistas panorámicas de 360
                     grados de todo París con la Torre Eiffel como punto más relevante.</p>
-                <hr>
                 <!-- Preview Image -->
-                <img class="img-fluid rounded" src="img/vista-torre-Montparnasse-de-noche.jpg" alt="">
+                <img class="img-fluid rounded" src="img/blog/vista-torre-Montparnasse-de-noche.jpg" alt="">
                 <hr>
-             
+
 
                 <!--Titulo-->
                 <p class="lead">9. Campos Elíseos</p>
@@ -278,9 +269,8 @@
                     ver un obelisco egipcio de más de 3.000 años de antigüedad.
                     Pasada la plaza se encuentran los magníficos Jardines de las Tullerías, perfectos para pasear entre
                     árboles y descansar en sus cómodas sillas con vistas a una fuente.</p>
-                <hr>
                 <!-- Preview Image -->
-                <img class="img-fluid rounded" src="img/Campos Eliseos.jpg" alt="">
+                <img class="img-fluid rounded" src="img/blog/Campos Eliseos.jpg" alt="">
                 <hr>
 
                 <!--Titulo-->
@@ -294,9 +284,8 @@
                     Durante el recorrido por la prisión puedes ver una reconstrucción de la celda de Maria Antonieta y
                     las diferencias de condiciones que existían con los presos pobres, que dormían en el suelo mientras
                     los ricos, disponían de todo tipo de comodidades, incluidos sirvientes.</p>
-                <hr>
                 <!-- Preview Image -->
-                <img class="img-fluid rounded" src="img/le-conciergerie.webp" alt="">
+                <img class="img-fluid rounded" src="img/blog/le-conciergerie.webp" alt="">
                 <hr>
 
 
@@ -313,9 +302,8 @@
                     Francs-Bourgeois, además de los callejones adyacentes a todas ellas.
                     Además, el barrio tiene la comunidad judía más grande de Europa y está considerado como el barrio
                     gay de la ciudad.</p>
-                <hr>
                 <!-- Preview Image -->
-                <img class="img-fluid rounded my-4" src="img/le marais.jpg" alt="">
+                <img class="img-fluid rounded my-4" src="img/blog/le marais.jpg" alt="">
 
                 <hr>
                 <!--Titulo-->
@@ -330,9 +318,8 @@
                     Uno de sus lugares con más encanto e historia, es la Fuente Médici que se remonta a los inicios de
                     siglo XVII cuando la reina María de Médici los mandó construir recreando el Jardín de Bóboli de su
                     Florencia natal.</p>
-                <hr>
                 <!-- Preview Image -->
-                <img class="img-fluid rounded" src="img/Jardines-de-Luxemburgo-1.jpeg" alt="">
+                <img class="img-fluid rounded" src="img/blog/Jardines-de-Luxemburgo-1.jpeg" alt="">
                 <hr>
 
                 <!--Titulo-->
@@ -343,9 +330,8 @@
                     rosario.
                     De los 300 kilómetros de túneles solo están abiertos al público 800 metros de galerías de paredes
                     forradas de huesos.</p>
-                <hr>
                 <!-- Preview Image -->
-                <img class="img-fluid rounded" src="img/catacumbas.jpg" alt="">
+                <img class="img-fluid rounded" src="img/blog/catacumbas.jpg" alt="">
                 <hr>
 
                 <!--Titulo-->
@@ -360,9 +346,8 @@
                     Uno de los mejores momentos para visitarlo es en Navidad, momento en el que sus increíbles
                     escaparates parecen cobrar vida y un gran árbol en el interior marca la diferencia sobre el resto de
                     decoraciones navideñas de la ciudad.</p>
-                <hr>
                 <!-- Preview Image -->
-                <img class="img-fluid rounded" src="img/lafayette.jpg" alt="">
+                <img class="img-fluid rounded" src="img/blog/lafayette.jpg" alt="">
                 <hr>
 
                 <!--Titulo-->
@@ -373,22 +358,20 @@
                     lámparas y algunos de sus elementos más destacados son la gran escalera de mármol y la impresionante
                     sala de espectáculos, decorada en rojos y dorados, que inspiró la obra «El fantasma de la Ópera«.
                 </p>
-                <hr>
                 <!-- Preview Image -->
-                <img class="img-fluid rounded" src="img/opera garnier.jpg" alt="">
-                <hr>
-
+                <img class="img-fluid rounded" src="img/blog/opera garnier.jpg" alt="">
                 <blockquote class="blockquote shadow p-3 mb-5 bg-white rounded">
                     <p class="mb-0">
-                       <p>- ¿Sabes cómo le dicen al cuarto de libra con queso en París?</p>
-                        <p>- ¿No le dicen un cuarto de libra con queso?</p> 
-                        <p>- Ellos usan el sistema métrico, así que no saben qué demonios es un cuarto de libra.</p> 
-                        <p>- ¿Entonces, cómo lo llaman?</p> 
-                        <p>- Le llaman... Royale With Cheese.</p> 
-                        <p>- ¿Cómo llaman a la Big Mac?</p> 
-                        <p>- Una Big Mac es una Big Mac, pero ellos le dicen Le Big Mac.</p> 
-                        <p>- Le Big Mac... ja, ja,ja... ¿y cómo le dicen al Whopper?</p> 
-                        <p>- No sé, no entré al Burger King.</p> </p>
+                        <p>- ¿Sabes cómo le dicen al cuarto de libra con queso en París?</p>
+                        <p>- ¿No le dicen un cuarto de libra con queso?</p>
+                        <p>- Ellos usan el sistema métrico, así que no saben qué demonios es un cuarto de libra.</p>
+                        <p>- ¿Entonces, cómo lo llaman?</p>
+                        <p>- Le llaman... Royale With Cheese.</p>
+                        <p>- ¿Cómo llaman a la Big Mac?</p>
+                        <p>- Una Big Mac es una Big Mac, pero ellos le dicen Le Big Mac.</p>
+                        <p>- Le Big Mac... ja, ja,ja... ¿y cómo le dicen al Whopper?</p>
+                        <p>- No sé, no entré al Burger King.</p>
+                    </p>
                     <footer class="blockquote-footer">Vincent Vega & Jules Winnfield.
                         <cite title="Source Title">Pulp Fiction.</cite>
                     </footer>
@@ -455,14 +438,14 @@
             </div>
 
             <!-- Sidebar -->
-            <div class="col col-lg-4 col-md-4 col-sm-12 ">
+            <div class="col col-lg-4 col-md-5 col-sm-12 ">
 
                 <!-- Search -->
                 <div class="card my-4">
                     <h5 class="card-header">Buscar</h5>
                     <div class="card-body">
                         <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Que desea buscar?...">
+                            <input type="text" class="form-control mr-3" placeholder="Que desea buscar?...">
                             <span class="input-group-btn">
                                 <button class="btn btn-secondary" type="button">Ir!</button>
                             </span>
@@ -527,52 +510,46 @@
                             <button type="button" class="list-group-item list-group-item-action"><a
                                     href="error404.html">Que visitar en Tokio</a>
                             </button>
-
                         </div>
                     </div>
                 </div>
-
                 <div class="card my-4">
                     <h5 class="card-header">Mapa Interactivo</h5>
                     <div class="card-body">
-                        <iframe src="https://www.google.com/maps/d/embed?mid=1MxsrNqbdWR9TooNjBANUNME05Kk" width="300"
-                            height="350"></iframe>
-
-
+                        <iframe class="w-100" src="https://www.google.com/maps/d/embed?mid=1MxsrNqbdWR9TooNjBANUNME05Kk"
+                            height="400px"></iframe>
                     </div>
                 </div>
-
             </div>
-
         </div>
         <!-- /.row -->
-
     </div>
     <!-- /.container -->
-    <button id="myBtn"><a href="#top">^</a></button>
-    <!-- Footer -->
-    <footer class="text-light py-4 piedepagina">
+    <a href="#top" id="myBtn"><i class="fas fa-arrow-circle-up fa-2x"></i></a>
+    <!--Footer-->
+    <footer class="text-light py-4 piedepagina text-center">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-md-4 text-center">
                     <a href="#" class="text-decoration-none">
-                        <img src="img/" alt="Logo la cual no hay" width="100px">
+                        <img src="img/logo.png" alt="Logo" width="30" height="30">
+                        <p class="lead text-decoration-none text-light">Travel the World</p>
                     </a>
                 </div>
                 <div class="col-sm-12 col-md-4">
-                    <p><strong>Informacion Basica</strong></p>
+                    <p><strong>Informacion Básica</strong></p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, similique!</p>
                 </div>
                 <div class="col-sm-12 col-md-4">
                     <p><strong>Encontranos En:</strong></p>
                     <a href="#" class="text-decoration-none text-light">
-                        <i class="fab fa-facebook-f fa-2x p-2"></i>
+                        <i class="fab fa-facebook-f fa-2x p-2 facebook"></i>
                     </a>
                     <a href="#" class="text-decoration-none text-light">
-                        <i class="fab fa-twitter fa-2x p-2"></i>
+                        <i class="fab fa-twitter fa-2x p-2 twitter"></i>
                     </a>
                     <a href="#" class="text-decoration-none text-light">
-                        <i class="fab fa-instagram fa-2x p-2"></i>
+                        <i class="fab fa-instagram fa-2x p-2 instagram"></i>
                     </a>
                 </div>
             </div>
@@ -582,8 +559,6 @@
             <p class="text-center">&copy; Todos los derechos reservados al Grupo 1</p>
         </div>
     </footer>
-
-
     <!-- Bootstrap core JavaScript -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"

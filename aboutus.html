@@ -13,37 +13,49 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark ">
-        <div class="container">
-            <img class="mr-2" src="img/logo.png" width="30" height="30" alt="Logo">
-            <a class="navbar-brand" href="index.html">Travel the World</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark ">
+            <div class="container">
+                <img class="mr-2" src="img/logo.png" width="30" height="30" alt="Logo">
+                <a class="navbar-brand" href="index.html">Travel the World</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
 
-                    <li class="nav-item active" id="navitem">
-                        <a class="nav-link" href="login.html">Login</a>
-                    </li>
-                    <li class="nav-item active" id="navitem">
-                        <a class="nav-link" href="aboutus.html">Sobre Nosotros</a>
-                    </li>
-                    <li class="nav-item active" id="navitem">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
-                    </li>
-                    <li class="nav-item active" id="navitem">
-                        <a class="nav-link" href="galeria.html">Galería de fotos</a>
-                    </li>
-                    <button type="button" class="btn btn-light" data-toggle="modal" data-target="#example-modal">
-                        Suscripción
-                    </button>
-                </ul>
+                        <li class="nav-item" id="navitem">
+                            <a class="nav-link" href="login.html">Login</a>
+                        </li>
+                        <li class="nav-item active" id="navitem">
+                            <a class="nav-link" href="aboutus.html">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item" id="navitem">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item" id="navitem">
+                            <a class="nav-link" href="galeria.html">Galería de fotos</a>
+                        </li>
+                        <button type="button" class="btn btn-light" data-toggle="modal" data-target="#example-modal">
+                            Suscripción
+                        </button>
+                    </ul>
+                </div>
             </div>
-        </div>
+        </nav>
+    </header>
+    <!--BreadCrumb-->
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb text-dark">
+            <li class="breadcrumb-item"><a href="#"><i class="fas fa-home pr-2"></i>Inicio</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Nosotros</li>
+        </ol>
     </nav>
+    </section>
+    <!--BreadCrumb ends-->
     <div id="carouselExampleIndicators" class="carousel slide mb-4" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -74,12 +86,14 @@
     <form class="container shadow p-3 mb-5 bg-light rounded">
         <h1 class="text-center">Travel the World</h1>
         <h2 class="text-center lead">Proyecto: grupo 1</h2>
-        <p class="text-center">No son pocas las veces que nos escriben preguntándonos quién está detrás de Travel the World, así que en este pequeño espacio, vamos a intentar contar un poquito más sobre nosotros. Y aunque
+        <p class="text-center">No son pocas las veces que nos escriben preguntándonos quién está detrás de Travel the
+            World, así que en este pequeño espacio, vamos a intentar contar un poquito más sobre nosotros. Y aunque
             no estamos muy acostumbrados a ello, ya que preferimos destacar y hablar sobre destinos y viajes, vamos a
             intentarlo. <br>
             Somos Alvaro, Daniel, Franco y Micaela de argentina, estudiantes de programación. <br>
             Para nosotros siempre han sido de gran ayuda los foros y los blogs de viaje por lo que,
-            decidimos crear Travel the World, un blog en el que poder explicar nuestras experiencias, ayudarte a programar tus proximos viajes con los mejores destinos y consejos.</p>
+            decidimos crear Travel the World, un blog en el que poder explicar nuestras experiencias, ayudarte a
+            programar tus proximos viajes con los mejores destinos y consejos.</p>
     </form>
 
     <!--otracosa-->
@@ -147,6 +161,7 @@
             </div><!-- /.row -->
         </div>
     </form>
+    <a href="#top" id="myBtn"><i class="fas fa-arrow-circle-up fa-2x"></i></a>
     <!--Footer-->
     <footer class="text-light py-4 piedepagina text-center">
         <div class="container">
@@ -158,7 +173,7 @@
                     </a>
                 </div>
                 <div class="col-sm-12 col-md-4">
-                    <p><strong>Informacion Basica</strong></p>
+                    <p><strong>Informacion Básica</strong></p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, similique!</p>
                 </div>
                 <div class="col-sm-12 col-md-4">

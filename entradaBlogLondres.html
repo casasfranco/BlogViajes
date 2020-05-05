@@ -23,45 +23,48 @@
 <body>
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark navstyle ">
-    <div class="container">
-      <img src="img/logo1.png" width="30" height="30" alt="">
-      <a class="navbar-brand" href="index.html">Travel the World</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="container">
+        <img class="mr-2" src="img/logo.png" width="30" height="30" alt="Logo">
+        <a class="navbar-brand" href="index.html">Travel the World</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
 
-          <li class="nav-item active" id="navitem">
-            <a class="nav-link" href="login.html">Login</a>
-          </li>
-          <li class="nav-item active" id="navitem">
-            <a class="nav-link" href="aboutus.html">Sobre Nosotros</a>
-          </li>
-          <li class="nav-item active" id="navitem">
-            <a class="nav-link" href="contacto.html">Contacto</a>
-          </li>
-          <li class="nav-item active" id="navitem">
-            <a class="nav-link" href="galeria.html">Galeria de Fotos</a>
-          </li>>
-          <button type="button" class="btn btn-light" data-toggle="modal" data-target="#exampleModal">
-            Suscripción
-          </button>
-        </ul>
+            <li class="nav-item active" id="navitem">
+              <a class="nav-link" href="login.html">Login</a>
+            </li>
+            <li class="nav-item active" id="navitem">
+              <a class="nav-link" href="aboutus.html">Sobre Nosotros</a>
+            </li>
+            <li class="nav-item active" id="navitem">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item active" id="navitem">
+              <a class="nav-link" href="galeria.html">Galería de fotos</a>
+            </li>
+            <button type="button" class="btn btn-light" data-toggle="modal" data-target="#example-modal">
+              Suscripción
+            </button>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </header>
+  <!--BreadCrumb-->
   <nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="#">Home</a></li>
-      <li class="breadcrumb-item active"><a href="entradaBlogLondres.html">Londres</a></li>
-
+    <ol class="breadcrumb text-dark">
+      <li class="breadcrumb-item"><a href="#"><i class="fas fa-home pr-2"></i>Inicio</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Entrada Londres</li>
     </ol>
   </nav>
-
+  </section>
+  <!--BreadCrumb ends-->
   <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
     aria-hidden="true" id="#Modal">
@@ -100,7 +103,7 @@
     <div class="row">
 
       <!-- Post Content Column -->
-      <div class="col col-lg-8 col-md-8">
+      <div class="col col-lg-8 col-md-7">
 
         <!-- Title -->
         <h1 class="mt-4">Que hacer en Londres?</h1>
@@ -108,20 +111,24 @@
         <!-- Author -->
         <p class="lead">
           by
-          <a href="sobrenosotros.html">author</a>
+          <a href="aboutus.html">author</a>
         </p>
+        
+        <!-- Widgets -->
+        <i class="far fa-clock mr-3"><span class="pl-2">Hace 8 minutos</span></i>
+        <span class="badge badge-success">Nuevo!</span>
+
+        <div class="mt-2">
+          <i class="far fa-eye separadores mr-4"> 273 views</i>
+          <i class="far fa-comments p-2"> 4</i>
+        </div>
 
         <hr>
 
-        <!-- Date/Time -->
-        <p>20 de Abril 12:00 P.M</p>
-
-        <hr>
-
+        
         <!-- Preview Image -->
         <img class="img-fluid rounded" src="img/blog/london1.jpg" alt="Imagen de Londres">
-
-        <hr>
+        <h3 class="display-4 mt-4">Introducción</h3>
 
         <!-- Post Content -->
         <p class="lead">Esta lista de los mejores lugares que visitar en Londres te ayudará a preparar un viaje a una de
@@ -139,10 +146,8 @@
           música en directo.
           Aunque está abierto todos los días y mucha gente recomienda ir en domingo, nosotros aconsejamos visitar Camden
           Town entre semana para no agobiarte con la gran cantidad de gente que se acumula durante el fin de semana.</p>
-        <hr>
         <!-- Preview Image -->
         <img class="img-fluid rounded" src="img/blog/camden.jpg" alt="Camden Town view">
-        <hr>
         <!--Cita-->
         <blockquote class="blockquote shadow p-3 mb-5 bg-white rounded">
           <p class="mb-0">El hombre que puede dominar una conversación en Londres puede dominar el mundo.</p>
@@ -161,7 +166,6 @@
           del todo exacta, ya que el Big Ben realmente es una enorme campana de 14 toneladas que se encuentra en el
           interior de la torre, que junto al Palacio de Westminster de estilo gótico victoriano, son Patrimonio de la
           Humanidad y están situados en la orilla del Támesis.</p>
-        <hr>
         <!-- Preview Image -->
         <img class="img-fluid rounded" src="img/blog/big ben.jpg" alt="">
         <hr>
@@ -174,7 +178,6 @@
           eleva y subir a la parte superior para andar sobre una pasarela de cristal transparente mientras disfrutas de
           excelentes vistas de la ciudad.
           Nosotros recomendamos acercarte a este fotogénico puente de día y de noche y verlo desde ambas orillas.</p>
-        <hr>
         <!-- Preview Image -->
         <img class="img-fluid rounded" src="img/blog/tower bridge.jpg" alt="">
         <hr>
@@ -184,7 +187,6 @@
         <p>Es el parque más grande y famoso de la ciudad en el que encontrarás desde un enorme lago, varios monumentos,
           un jardín de rosas, los jardines y el Palacio de Kensington, hasta un sinfín de senderos para pasear o correr.
         </p>
-        <hr>
         <!-- Preview Image -->
         <img class="img-fluid rounded" src="img/blog/hyde park.jpg" alt="">
         <hr>
@@ -198,7 +200,6 @@
           personajes ilustres como David Livingstone, Isaac Newton, Charles Dickens, Laurence Olivier o Charles Darwin
           además de algunos de sus rincones más destacados como la Lady Chapel, los claustros, el rincón de los poetas,
           la Sala Capitular, el Altar Mayor y el Trono de San Eduardo.</p>
-        <hr>
         <!-- Preview Image -->
 
         <img class="img-fluid rounded" src="img/blog/abadia.jpg" alt="">
@@ -213,7 +214,6 @@
           ambiente o de una actuación en vivo de alguno músico callejero.
           Además, en esta zona junto a la encantadora Leicester Square y la Avenida Shaftesbury, se concentran varios de
           los teatros más famosos de Londres.</p>
-        <hr>
         <!-- Preview Image -->
         <img class="img-fluid rounded" src="img/blog/picadilly.jpg" alt="">
         <hr>
@@ -225,7 +225,6 @@
           inolvidable!
           Comienza por el maravilloso Top of the Rock, en el mítico Rockefeller Center, y acertarás. Aunque el Empire
           State Building, el Edge y el One World también te dejarán boquiabierto.</p>
-        <hr>
         <!-- Preview Image -->
         <img class="img-fluid rounded" src="img/blog/British-Museum-londre.jpeg" alt="">
         <hr>
@@ -243,10 +242,8 @@
           Los días de cada día también son perfectos para visitar el barrio con menos gente, entrar en alguna tiendas de
           antigüedades y librerías, tomar un café en algún local original o probar la comida tradicional en el Duke of
           Wellington, uno de los mejores restaurantes donde comer en Londres.</p>
-        <hr>
         <!-- Preview Image -->
         <img class="img-fluid rounded" src="img/blog/nothing hill.webp" alt="">
-        <hr>
         <blockquote class="blockquote shadow p-3 mb-5 bg-white rounded">
           <p class="mb-0">Londres es encantadora. Salgo y es como si de pronto apareciese una alfombra mágica sobre la
             que me siento transportada al seno de la belleza sin levantar un dedo.</p>
@@ -265,7 +262,6 @@
           Una vez cruzas las murallas que rodean el castillo puedes visitar lugares importantes como la Torre Blanca, el
           Palacio Medieval, la Capilla Real de San Pedro ad Vincula y el recinto que alberga las Joyas de la Corona, uno
           de los tesoros más valiosos del mundo.</p>
-        <hr>
         <!-- Preview Image -->
         <img class="img-fluid rounded" src="img/blog/torre-de-londres.jpg" alt="">
         <hr>
@@ -274,7 +270,6 @@
         <p class="lead">10. London Eye</p>
         <p>Desde las enormes cabinas de cristal de esta noria de 135 metros tienes unas increíbles vistas del río
           Támesis y el Big Ben. </p>
-        <hr>
         <!-- Preview Image -->
         <img class="img-fluid rounded" src="img/blog/london eye.jpg" alt="">
         <hr>
@@ -297,7 +292,6 @@
           <p> <strong>Mayfair:</strong> un exclusivo barrio en el que vive gente adinerada con elegantes casas
             georgianos, tiendas de lujo y restaurantes caros.</p>
         </p>
-        <hr>
         <!-- Preview Image -->
         <img class="img-fluid rounded my-4" src="img/blog/Covent-Garden-Hero-West-Piazza.jpg" alt="">
         <img class="img-fluid rounded" src="img/blog/soho.jpeg" alt="">
@@ -312,7 +306,6 @@
           de meses cada dos días.
           Para visitar las preciosas salas del Palacio hay que reservar con bastante tiempo de antelación ya que sólo se
           permite la entrada desde el 23 de julio hasta el 2 de octubre de 9:15h a 19:45h.</p>
-        <hr>
         <!-- Preview Image -->
         <img class="img-fluid rounded" src="img/blog/Buckingham-Palace.jpg" alt="">
         <hr>
@@ -325,7 +318,6 @@
           ciudad. Además de disfrutar del ambiente, la plaza tiene en uno de los laterales la National Gallery, un museo
           con una de las colecciones más importantes de arte del mundo, que es otro de los lugares que visitar en
           Londres más recomendados.</p>
-        <hr>
         <!-- Preview Image -->
         <img class="img-fluid rounded" src="img/blog/trafalgar square.jpg" alt="">
         <hr>
@@ -342,13 +334,12 @@
           el palco de la reina y el impresionante escenario.
           Otra opción es comprar la entrada para alguno de los conciertos de música clásica, pop, rock, ópera o ballet,
           en los que actúan todos los grandes artistas del momento.</p>
-        <hr>
         <!-- Preview Image -->
         <img class="img-fluid rounded" src="img/blog/Royal_Albert_Hall.jpg" alt="Imagen del Royal Albert Hall">
-        <hr>
-
+        
         <blockquote class="blockquote shadow p-3 mb-5 bg-white rounded">
-          <p class="mb-0">A mi modo de ver basado en mi experiencia, los más bajos barrios de Londres no presentan un record más terrible de pecado que el sonriente y bello campo.</p>
+          <p class="mb-0">A mi modo de ver basado en mi experiencia, los más bajos barrios de Londres no presentan un
+            record más terrible de pecado que el sonriente y bello campo.</p>
           <footer class="blockquote-footer">Sir Arthur Conan Doyle.
             <cite title="Source Title">Anonimo.</cite>
           </footer>
@@ -360,7 +351,8 @@
 
         <!-- Comentario -->
         <div class="media mb-4">
-          <img class="d-flex mr-3 rounded-circle" src="/img/blog/comments/christopher-campbell-28567-unsplash.png" width="80px" alt="" >
+          <img class="d-flex mr-3 rounded-circle" src="/img/blog/comments/christopher-campbell-28567-unsplash.png"
+            width="80px" alt="">
           <div class="media-body">
             <h6 class="mt-0">Daniel</h6>
             <p>Gran fan de este blog!.</p>
@@ -369,13 +361,14 @@
 
         <!-- Comentario anidado -->
         <div class="media mb-4">
-          <img class="d-flex mr-3 rounded-circle" src="/img/blog/comments/icon.svg" width="80px" alt="" >
+          <img class="d-flex mr-3 rounded-circle" src="/img/blog/comments/icon.svg" width="80px" alt="">
           <div class="media-body">
             <h6 class="mt-0">Joe</h6>
             <p>Very useful information.</p>
 
             <div class="media mt-4">
-              <img class="d-flex mr-3 rounded-circle" src="/img/blog/comments/christopher-campbell-28567-unsplash.png" alt="">
+              <img class="d-flex mr-3 rounded-circle" src="/img/blog/comments/christopher-campbell-28567-unsplash.png"
+                alt="">
               <div class="media-body">
                 <h6 class="mt-0">Eugene</h6>
                 <p>right.</p>
@@ -383,7 +376,8 @@
             </div>
 
             <div class="media mt-4">
-              <img class="d-flex mr-3 rounded-circle" src="/img/blog/comments/christopher-campbell-28567-unsplash.png" alt="">
+              <img class="d-flex mr-3 rounded-circle" src="/img/blog/comments/christopher-campbell-28567-unsplash.png"
+                alt="">
               <div class="media-body">
                 <h6 class="mt-0">Rita</h6>
                 <p>Gran sitio!</p>
@@ -414,14 +408,14 @@
       </div>
 
       <!-- Sidebar Widgets Column -->
-      <div class="col col-lg-4 col-md-4 col-sm-12 ">
+      <div class="col col-lg-4 col-md-5 col-sm-12 ">
 
         <!-- Search Widget -->
         <div class="card my-4">
           <h5 class="card-header">Buscar</h5>
           <div class="card-body">
             <div class="input-group">
-              <input type="text" class="form-control" placeholder="Que desea buscar?...">
+              <input type="text" class="form-control mr-3" placeholder="Que desea buscar?...">
               <span class="input-group-btn">
                 <button class="btn btn-secondary" type="button">Ir!</button>
               </span>
@@ -487,53 +481,45 @@
               <button type="button" class="list-group-item list-group-item-action"><a href="error404.html">Que visitar
                   en Tokio</a>
               </button>
-
             </div>
           </div>
         </div>
-
         <div class="card my-4">
           <h5 class="card-header">Mapa Interactivo</h5>
           <div class="card-body">
-            <iframe src="https://www.google.com/maps/d/embed?mid=1iH9Y93qoHVvRPmV0aa9opDcnP3Y" width="300"
-              height="350"></iframe>
-
-
+            <iframe class="w-100" src="https://www.google.com/maps/d/embed?mid=1iH9Y93qoHVvRPmV0aa9opDcnP3Y" height="400px"></iframe>
           </div>
         </div>
-
       </div>
-
     </div>
     <!-- /.row -->
-
   </div>
   <!-- /.container -->
   <a href="#top" id="myBtn"><i class="fas fa-arrow-circle-up fa-2x"></i></a>
-  
-  <!-- Footer -->
-  <footer class="text-light py-4 piedepagina">
+  <!--Footer-->
+  <footer class="text-light py-4 piedepagina text-center">
     <div class="container">
       <div class="row">
         <div class="col-sm-12 col-md-4 text-center">
           <a href="#" class="text-decoration-none">
-            <img src="img/" alt="Logo la cual no hay" width="100px">
+            <img src="img/logo.png" alt="Logo" width="30" height="30">
+            <p class="lead text-decoration-none text-light">Travel the World</p>
           </a>
         </div>
         <div class="col-sm-12 col-md-4">
-          <p><strong>Informacion Basica</strong></p>
+          <p><strong>Informacion Básica</strong></p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, similique!</p>
         </div>
         <div class="col-sm-12 col-md-4">
           <p><strong>Encontranos En:</strong></p>
           <a href="#" class="text-decoration-none text-light">
-            <i class="fab fa-facebook-f fa-2x p-2"></i>
+            <i class="fab fa-facebook-f fa-2x p-2 facebook"></i>
           </a>
           <a href="#" class="text-decoration-none text-light">
-            <i class="fab fa-twitter fa-2x p-2"></i>
+            <i class="fab fa-twitter fa-2x p-2 twitter"></i>
           </a>
           <a href="#" class="text-decoration-none text-light">
-            <i class="fab fa-instagram fa-2x p-2"></i>
+            <i class="fab fa-instagram fa-2x p-2 instagram"></i>
           </a>
         </div>
       </div>
@@ -543,8 +529,6 @@
       <p class="text-center">&copy; Todos los derechos reservados al Grupo 1</p>
     </div>
   </footer>
-
-
   <!-- Bootstrap core JavaScript -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
