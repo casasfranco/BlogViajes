@@ -14,41 +14,40 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bgEdited">
-      <a class="navbar-brand" href="#">
-        <img src="img/Logo.png" class="mx-2" width="150" height="100" alt="">
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="container">
+        <img class="mr-2" src="img/logo.png" width="30" height="30" alt="Logo">
+        <a class="navbar-brand" href="index.html">Travel the World</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Dropdown
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li>
-        </ul>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+
+            <li class="nav-item active" id="navitem">
+              <a class="nav-link" href="login.html">Login</a>
+            </li>
+            <li class="nav-item active" id="navitem">
+              <a class="nav-link" href="aboutus.html">Sobre Nosotros</a>
+            </li>
+            <li class="nav-item active" id="navitem">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item active" id="navitem">
+              <a class="nav-link" href="galeria.html">Galería de fotos</a>
+            </li>
+            <button type="button" class="btn btn-light" data-toggle="modal" data-target="#example-modal">
+              Suscripción
+            </button>
+          </ul>
+        </div>
       </div>
     </nav>
   </header>
   <!--Carousel-->
-  <section>
+  <section class="opaque">
     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -108,131 +107,182 @@
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb text-dark">
         <li class="breadcrumb-item"><a href="#"><i class="fas fa-home pr-2"></i>Home</a></li>
-        <li class="breadcrumb-item"><a href="#">Library</a></li>
         <li class="breadcrumb-item active" aria-current="page">Data</li>
       </ol>
     </nav>
   </section>
   <!--BreadCrumb ends-->
-  
-  <section class="container mb-5">
-    <div class="row">
+  <section class="container-fluid mb-5">
+    <div class="row justify-content-between">
       <div class="d-none d-xl-block">
-      <div class="col-sm-12 col-md-6 col-xl-4 d-flex flex-colum align-items-center mb-2 ">
-        <img class="rounded-circle" src="img/blog-2103593-0.svg" alt="Blog diseño entradas ideas" width="130" height="130">
-        <h5 class="ml-3">Actualizaciones diarias</h5>
-      </div><!-- /.col-lg-4 -->
-    </div>
+        <div class="col-sm-12 col-md-6 col-xl-4 d-flex flex-colum align-items-center mb-2 ">
+          <img class="rounded-circle" src="img/blog-2103593-0.svg" alt="Blog diseño entradas ideas" width="130"
+            height="130">
+          <h5 class="ml-3">Actualizaciones diarias</h5>
+        </div><!-- /.col-lg-4 -->
+      </div>
       <div class="col-sm-12 col-md-6 col-xl-4 d-flex flex-colum align-items-center mb-2">
-        <img class="rounded-circle" src="img/concept-of-importance-of-work-place-for-employees-in-business-1862203-0.svg" alt="Generic placeholder image" width="130" height="130">
+        <img class="rounded-circle"
+          src="img/concept-of-importance-of-work-place-for-employees-in-business-1862203-0.svg"
+          alt="Generic placeholder image" width="130" height="130">
         <h5 class="ml-3">Te ayudamos a planificar tu viaje</h5>
       </div><!-- /.col-lg-4 -->
       <div class="col-sm-12 col-md-6 col-xl-4 d-flex flex-colum align-items-center mb-2">
-        <img class="rounded-circle" src="img/web-security-2080973-0.svg" alt="Generic placeholder image" width="130" height="130">
-        <h5 class="ml-3">Navegá seguro!<br> 
-        <span class="text-muted"><small>Protejemos tus datos</small></span></h5>
+        <img class="rounded-circle" src="img/web-security-2080973-0.svg" alt="Generic placeholder image" width="130"
+          height="130">
+        <h5 class="ml-3">Navegá seguro!<br>
+          <span class="text-muted"><small>Protejemos tus datos</small></span></h5>
       </div><!-- /.col-lg-4 -->
     </div>
+    <hr>
   </section>
 
   <!--Main Container-->
-  <div class="container-fluid border border-warning">
-    <h1 class="display-4 ml-5">Novedades</h1>
-    <div class="row border border-danger">
+  <div class="container-fluid">
+    <h1 class="display-4 ml-5" id="title-sm">Novedades</h1>
+    <div class="row">
       <!--Cards-->
-      <div class="col-sm-12 col-md-7 col-xl-8 mx-5">
+      <div class="col-sm-10 col-md-7 col-xl-8 mx-5">
         <div class="row">
+          <div class="col-sm-12 col-md-6 col-xl-4">
+            <div class="card shadow-sm mb-4 bg-white rounded">
+              <img src="/img/cards/londonEye.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">London</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's
+                  content.</p>
+                <img src="/img/flags/england.svg" width="50px" height="50px" alt="">
+                <div class="d-flex align-items-center justify-content-between pt-3" id="b-items">
+                  <i class="far fa-clock"><span class="pl-2">Hace 15min</span></i>
+                  <a href="entradaBlogLondres.html" class="btn btn-primary" id="b-items">Ver más</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-xl-4">
+            <div class="card shadow-sm mb-4 bg-white rounded">
+              <img src="/img/cards/newYork.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">New York</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's
+                  content.</p>
+                <img src="/img/flags/pais (1).svg" width="50px" height="50px" alt="">
+                <div class="d-flex align-items-center justify-content-between pt-3" id="b-items">
+                  <i class="far fa-clock"><span class="pl-2">Hace 15min</span></i>
+                  <a href="entradaBlogNY.html" class="btn btn-primary" id="b-items">Ver más</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-xl-4">
+            <div class="card shadow-sm mb-4 bg-white rounded">
+              <img src="/img/cards/arcoTriunfo.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Paris</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's
+                  content.</p>
+                <img src="/img/flags/pais (1).svg" width="50px" height="50px" alt="">
+                <div class="d-flex align-items-center justify-content-between pt-3" id="b-items">
+                  <i class="far fa-clock"><span class="pl-2">Hace 15min</span></i>
+                  <a href="entradaBlogParis.html" class="btn btn-primary" id="b-items">Ver más</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-xl-4">
+            <div class="card shadow-sm mb-4 bg-white rounded">
+              <img src="/img/cards/Image.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's
+                  content.</p>
+                <div class="d-flex align-items-center justify-content-between pt-3" id="b-items">
+                  <i class="far fa-clock"><span class="pl-2">Hace 15min</span></i>
+                  <a href="#" class="btn btn-primary" id="b-items">Ver más</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-xl-4">
+            <div class="card shadow-sm mb-4 bg-white rounded">
+              <img src="/img/cards/Image.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's
+                  content.</p>
+                <div class="d-flex align-items-center justify-content-between pt-3" id="b-items">
+                  <i class="far fa-clock"><span class="pl-2">Hace 15min</span></i>
+                  <a href="#" class="btn btn-primary" id="b-items">Ver más</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-xl-4">
+            <div class="card shadow-sm mb-4 bg-white rounded">
+              <img src="/img/cards/Image.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's
+                  content.</p>
+                <div class="d-flex align-items-center justify-content-between pt-3" id="b-items">
+                  <i class="far fa-clock"><span class="pl-2">Hace 15min</span></i>
+                  <a href="#" class="btn btn-primary" id="b-items">Ver más</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-xl-4">
+            <div class="card shadow-sm mb-4 bg-white rounded">
+              <img src="/img/cards/Image.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's
+                  content.</p>
+                <div class="d-flex align-items-center justify-content-between pt-3" id="b-items">
+                  <i class="far fa-clock"><span class="pl-2">Hace 15min</span></i>
+                  <a href="#" class="btn btn-primary" id="b-items">Ver más</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-xl-4">
+            <div class="card shadow-sm mb-4 bg-white rounded">
+              <img src="/img/cards/Image.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's
+                  content.</p>
+                <div class="d-flex align-items-center justify-content-between pt-3" id="b-items">
+                  <i class="far fa-clock"><span class="pl-2">Hace 15min</span></i>
+                  <a href="#" class="btn btn-primary" id="b-items">Ver más</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-xl-4">
+            <div class="card shadow-sm mb-4 bg-white rounded">
+              <img src="/img/cards/Image.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's
+                  content.</p>
+                <div class="d-flex align-items-center justify-content-between pt-3" id="b-items">
+                  <i class="far fa-clock"><span class="pl-2">Hace 15min</span></i>
+                  <a href="#" class="btn btn-primary" id="b-items">Ver más</a>
+                </div>
+              </div>
+            </div>
+          </div>
 
-          <div class="col-sm-12 col-md-6 col-xl-4">
-            <div class="card shadow-sm mb-4 bg-white rounded">
-              <img src="/img/cards/Image.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's
-                  content.</p>
-                  <div class="d-flex justify-content-between align-items-center pt-3">
-                    <i class="far fa-clock"><span class="pl-2">Hace 15min</span></i>
-                    <a href="#" class="btn btn-primary">Ver más</a>
-                  </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-6 col-xl-4">
-            <div class="card shadow-sm mb-4 bg-white rounded">
-              <img src="/img/cards/Image.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's
-                  content.</p>
-                  <div class="d-flex justify-content-between align-items-center pt-3">
-                    <i class="far fa-clock"><span class="pl-2">Hace 15min</span></i>
-                    <a href="#" class="btn btn-primary">Ver más</a>
-                  </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-6 col-xl-4">
-            <div class="card shadow-sm mb-4 bg-white rounded">
-              <img src="/img/cards/Image.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's
-                  content.</p>
-                  <div class="d-flex justify-content-between align-items-center pt-3">
-                    <i class="far fa-clock"><span class="pl-2">Hace 15min</span></i>
-                    <a href="#" class="btn btn-primary">Ver más</a>
-                  </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-6 col-xl-4">
-            <div class="card shadow-sm mb-4 bg-white rounded">
-              <img src="/img/cards/Image.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's
-                  content.</p>
-                  <div class="d-flex justify-content-between align-items-center pt-3">
-                    <i class="far fa-clock"><span class="pl-2">Hace 15min</span></i>
-                    <a href="#" class="btn btn-primary">Ver más</a>
-                  </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-6 col-xl-4">
-            <div class="card shadow-sm mb-4 bg-white rounded">
-              <img src="/img/cards/Image.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's
-                  content.</p>
-                  <div class="d-flex justify-content-between align-items-center pt-3">
-                    <i class="far fa-clock"><span class="pl-2">Hace 15min</span></i>
-                    <a href="#" class="btn btn-primary">Ver más</a>
-                  </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-6 col-xl-4">
-            <div class="card shadow-sm mb-4 bg-white rounded">
-              <img src="/img/cards/Image.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's
-                  content.</p>
-                  <div class="d-flex justify-content-between align-items-center pt-3">
-                    <i class="far fa-clock"><span class="pl-2">Hace 15min</span></i>
-                    <a href="#" class="btn btn-primary">Ver más</a>
-                  </div>
-              </div>
-            </div>
-          </div>
         </div>
         <!--Cards End-->
         <!--Pagination-->
@@ -258,38 +308,132 @@
         <!--Pagination Ends-->
       </div>
       <!--Search-->
-      <div class="col-sm-12 col-md-3 border border-primary">
-        <div class="text-center shadow p-3 my-5 bg-white rounded">
-          <form>
-            <div class="form-group">
-              <label for="exampleFormControlInput1">Email address</label>
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      <div class="col-sm-12 col-md-3 mb-4">
+        <!-- Search Widget -->
+        <div class="card mb-5">
+          <h5 class="card-header">Buscar</h5>
+          <div class="card-body">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Que desea buscar?...">
+              <span class="input-group-btn">
+                <button class="btn btn-secondary ml-3" type="button">Ir!</button>
+              </span>
             </div>
-            <div class="form-group">
-              <label for="exampleFormControlSelect1">Example select</label>
-              <select class="form-control" id="exampleFormControlSelect1">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-              </select>
+          </div>
+        </div>
+        <!-- Tags Widget -->
+        <div class="card my-5">
+          <h5 class="card-header">Seleccione una categoria</h5>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-sm-6">
+                <ul class="list-unstyled mb-0">
+                  <li>
+                    <h6><a href="">Categoria 1</a></h6>
+                  </li>
+                  <li>
+                    <h6><a href="">Categoria 1</a></h6>
+                  </li>
+                  <li>
+                    <h6><a href="">Categoria 1</a></h6>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-sm-6">
+                <ul class="list-unstyled mb-0">
+                  <li>
+                    <h6><a href="">Categoria 1</a></h6>
+                  </li>
+                  <li>
+                    <h6><a href="">Categoria 1</a></h6>
+                  </li>
+                  <li>
+                    <h6><a href="">Categoria 1</a></h6>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <button type="submit" class="btn btn-warning mb-2">Confirm identity</button>
-          </form>
+          </div>
         </div>
-        <div class="text-center shadow p-3 my-5 bg-white rounded">
-          <p>Seleccione una opción</p>
+        <!--Advertising-->
+        <div class="mt-5 pt-4 d-none d-md-block ">
+          <img class="w-100" src="/img/Advertising.png" alt="">
         </div>
+        <!-- /.Advertising-->
       </div>
-      <!--Search-->
+      <!-- /.Search-->
     </div>
   </div>
-  <footer>
-    <section class="mt-5">
-      <p>&copy; Todos los derechos reservados</p>
-    </section>
+  <!-- Modal subscribirse-->
+  <div class="modal fade" id="example-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title lead" id="exampleModalLabel">SUSCRIBIRSE</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1"></label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+              placeholder="Enter Email">
+
+            <small id="emailHelp" class="form-text text-muted">Ingresar correo electrónico válido.
+              Suscríbete para recibír notificaciones semanales.</small>
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Activar notificaciones</label>
+          </div>
+          <button type="Submit" class="btn btn-warning">Suscribirse</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Salir</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Footer-->
+  <footer class="text-light py-4 piedepagina text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-4 text-center">
+          <a href="#" class="text-decoration-none">
+            <img src="img/logo.png" alt="Logo" width="30" height="30">
+            <p class="lead text-decoration-none text-light">Travel the World</p>
+          </a>
+        </div>
+        <div class="col-sm-12 col-md-4">
+          <p><strong>Informacion Basica</strong></p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, similique!</p>
+        </div>
+        <div class="col-sm-12 col-md-4">
+          <p><strong>Encontranos En:</strong></p>
+          <a href="#" class="text-decoration-none text-light">
+            <i class="fab fa-facebook-f fa-2x p-2 facebook"></i>
+          </a>
+          <a href="#" class="text-decoration-none text-light">
+            <i class="fab fa-twitter fa-2x p-2 twitter"></i>
+          </a>
+          <a href="#" class="text-decoration-none text-light">
+            <i class="fab fa-instagram fa-2x p-2 instagram"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div>
+      <p class="text-center">&copy; Todos los derechos reservados al Grupo 1</p>
+    </div>
   </footer>
+
+  <a href="#top" id="myBtn"><i class="fas fa-arrow-circle-up fa-2x"></i></a>
+
   <!--Main Container ends-->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"

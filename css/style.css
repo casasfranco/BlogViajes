@@ -1,8 +1,108 @@
-.bgEdited{
-    background-color: #B3C2C3;
-    font-size: 22px;
+html {
+  scroll-behavior: smooth;
 }
 
-.buttonBgColor{
-    background-color: #FA6980;
+.bgEdited {
+  background-color: #b3c2c3;
+  font-size: 22px;
+}
+
+.buttonBgColor {
+  background-color: #fa6980;
+}
+.navbar {
+  padding: 30px;
+  background-color: #040740;
+}
+
+#navitem:hover {
+  opacity: 80%;
+  background-color: black;
+  border-radius: 5%;
+}
+
+.opaque:hover {
+  filter: opacity(85%);
+}
+
+.shadow-warning {
+  filter: drop-shadow(8px 8px 10px rgb(255, 225, 0));
+}
+
+/*Nuevo*/
+/*Floating Back-To-Top Button*/
+#myBtn {
+  position: fixed;
+  bottom: 25px;
+  right: 0%;
+  left: 95%;
+  max-width: 50px;
+  width: 100%;
+  font-size: 25px;
+  padding: .5px;
+  border-radius: 4px;
+  text-decoration: none;
+
+}
+/*On Hover Color Change*/
+#myBtn:hover {
+  filter: opacity(60%);
+}
+
+#google-button {
+  background-color: blue;
+  color: white;
+  margin: 4px;
+}
+
+#google-button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+#facebook-button {
+  background-color: #02042a;
+  color: white;
+  margin: 4px;
+}
+
+#facebook-button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+#form-image {
+  margin-left: 220px;
+  margin-bottom: 10px;
+}
+
+/*FIN*/
+
+/*FOOTER*/
+.piedepagina {
+  background-color: #040740;
+}
+
+/* Responsive rules */
+
+/* medium devices ---> tablet */
+@media (min-width: 768px) and (max-width: 868px) {
+  #b-items {
+    font-size: 12px;
+  }
+  #title-sm {
+    font-size: 45px;
+  }
+}
+
+@media (min-width: 869px) and (max-width: 991px) {
+  #b-items {
+    font-size: 15px;
+  }
+}
+
+@media all and (max-width: 480px) {
+  #title-sm {
+    font-size: 45px;
+  }
 }
