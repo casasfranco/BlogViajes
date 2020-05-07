@@ -4,12 +4,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog Viajes</title>
-  <!--ADD METAS-->
+  <meta name="author" content="Alvaro Valenzuela, Micaela Garcia Cardenas, Daniel Rodolfo Lopez Sardi, Franco Casas">
+  <meta name="description" content="Te llevamos por el mundo desde tu casa!">
+  <meta name="keywords" content="blog,Blog,Viajes,viajes">
+  <title>Inicio</title>
+  <!--Link css-->
   <link rel="stylesheet" href="css/style.css">
+  <!--Fontawesome-->
+  <script src="https://kit.fontawesome.com/5123056da0.js" crossorigin="anonymous"></script>
+  <!--Link Bootstrap-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <script src="https://kit.fontawesome.com/ea866217b0.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -118,28 +123,28 @@
     <!--BreadCrumb-->
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb text-dark">
-        <li class="breadcrumb-item"><a href="#"><i class="fas fa-home pr-2"></i>Inicio</a></li>
+        <li class="breadcrumb-item"><a href="index.html"><i class="fas fa-home pr-2"></i>Inicio</a></li>
       </ol>
     </nav>
+    <!--BreadCrumb ends-->
   </section>
-  <!--BreadCrumb ends-->
-
-  <section class="container-fluid mb-5">
-    <div class="row justify-content-between">
-      <div class="d-none d-xl-block">
-        <div class="col-sm-12 col-md-6 col-xl-4 d-flex flex-colum align-items-center mb-2 ">
-          <img class="rounded-circle" src="img/blog-2103593-0.svg" alt="Blog diseño entradas ideas" width="130"
-            height="130">
-          <h5 class="ml-3">Actualizaciones diarias</h5>
-        </div><!-- /.col-lg-4 -->
-      </div>
-      <div class="col-sm-12 col-md-6 col-xl-4 d-flex flex-colum align-items-center mb-2">
+  <!-- Container with 3 icons -->
+  <section class="container-fluid">
+    <div class="row justify-content-start">
+      <div class="col-sm-12 col-md-6 col-xl-4 d-none d-xl-block text-center">
+        <img class="rounded-circle" src="img/blog-2103593-0.svg" alt="Blog diseño entradas ideas" width="130"
+          height="130">
+        <h5 class="ml-3">Actualizaciones diarias <br>
+          <span class="text-muted"><small>No te pierdas nada!</small></span></h5>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-sm-12 col-md-6 col-xl-4 d-block text-center">
         <img class="rounded-circle"
           src="img/concept-of-importance-of-work-place-for-employees-in-business-1862203-0.svg"
           alt="Generic placeholder image" width="130" height="130">
-        <h5 class="ml-3">Te ayudamos a planificar tu viaje</h5>
+        <h5 class="ml-3">Te ayudamos a planificar tu viaje <br>
+          <span class="text-muted"><small>Los mejores consejos esperan por tí</small></span></h5>
       </div><!-- /.col-lg-4 -->
-      <div class="col-sm-12 col-md-6 col-xl-4 d-flex flex-colum align-items-center mb-2">
+      <div class="col-sm-12 col-md-6 col-xl-4 d-block text-center">
         <img class="rounded-circle" src="img/web-security-2080973-0.svg" alt="Generic placeholder image" width="130"
           height="130">
         <h5 class="ml-3">Navegá seguro!<br>
@@ -152,9 +157,9 @@
   <!--Main Container-->
   <div class="container-fluid">
     <h1 class="display-4 ml-5" id="title-sm">Novedades</h1>
-    <div class="row">
+    <div class="row justify-content-between">
       <!--Cards-->
-      <div class="col-sm-10 col-md-7 col-xl-8 mx-5">
+      <div class="col-sm-10 col-md-8 col-xl-9">
         <div class="row">
           <!--First card-->
           <div class="col-sm-12 col-md-6 col-xl-4">
@@ -179,7 +184,7 @@
           <!-- /.First card-->
           <div class="col-sm-12 col-md-6 col-xl-4">
             <div class="card shadow-sm mb-4 bg-white rounded">
-              <img src="/img/cards/newYork.png" class="card-img-top" alt="...">
+              <img src="/img/cards/newYork.png" class="card-img-top" alt="New York">
               <div class="card-body">
                 <h5 class="card-title">New York</h5>
                 <span class="texto_responsive card-text" data-desktoptext="¿Qué ver en Nueva York en un primer viaje? Mirando el mapa de la Gran Manzana,
@@ -198,7 +203,7 @@
           </div>
           <div class="col-sm-12 col-md-6 col-xl-4">
             <div class="card shadow-sm mb-4 bg-white rounded">
-              <img src="/img/cards/arcoTriunfo.png" class="card-img-top" alt="...">
+              <img src="/img/cards/arcoTriunfo.png" class="card-img-top" alt="Paris">
               <div class="card-body">
                 <h5 class="card-title">Paris</h5>
                 <span class="texto_responsive card-text"
@@ -216,7 +221,7 @@
           </div>
           <div class="col-sm-12 col-md-6 col-xl-4">
             <div class="card shadow-sm mb-4 bg-white rounded">
-              <img src="/img/cards/Rome-italy.png" class="card-img-top" alt="...">
+              <img src="/img/cards/Rome-italy.png" class="card-img-top" alt="Roma">
               <div class="card-body">
                 <h5 class="card-title">Roma</h5>
                 <span class="texto_responsive card-text"
@@ -234,7 +239,7 @@
           </div>
           <div class="col-sm-12 col-md-6 col-xl-4">
             <div class="card shadow-sm mb-4 bg-white rounded">
-              <img src="/img/cards/Bariloche.png" class="card-img-top" alt="...">
+              <img src="/img/cards/Bariloche.png" class="card-img-top" alt="San Carlos de Bariloche">
               <div class="card-body">
                 <h5 class="card-title">San Carlos de Bariloche</h5>
                 <span class="texto_responsive card-text"
@@ -252,7 +257,7 @@
           </div>
           <div class="col-sm-12 col-md-6 col-xl-4">
             <div class="card shadow-sm mb-4 bg-white rounded">
-              <img src="/img/cards/Mountains.png" class="card-img-top" alt="...">
+              <img src="/img/cards/Mountains.png" class="card-img-top" alt="Tafí Del Valle - Tucumán">
               <div class="card-body">
                 <h5 class="card-title">Tafí Del Valle - Tucumán</h5>
                 <span class="texto_responsive card-text"
@@ -270,7 +275,7 @@
           </div>
           <div class="col-sm-12 col-md-6 col-xl-4">
             <div class="card shadow-sm mb-4 bg-white rounded">
-              <img src="/img/cards/brazil.png" class="card-img-top" alt="...">
+              <img src="/img/cards/brazil.png" class="card-img-top" alt="Fernando de Noronha, Brasil">
               <div class="card-body">
                 <h5 class="card-title">Fernando de Noronha, Brasil</h5>
                 <span class="texto_responsive card-text"
@@ -288,7 +293,7 @@
           </div>
           <div class="col-sm-12 col-md-6 col-xl-4">
             <div class="card shadow-sm mb-4 bg-white rounded">
-              <img src="/img/cards/BrandenburgGate.png" class="card-img-top" alt="...">
+              <img src="/img/cards/BrandenburgGate.png" class="card-img-top" alt="Puerta de Brandeburgo, Berlín">
               <div class="card-body">
                 <h5 class="card-title">Puerta de Brandeburgo, Berlín</h5>
                 <span class="texto_responsive card-text"
@@ -306,15 +311,15 @@
           </div>
           <div class="col-sm-12 col-md-6 col-xl-4">
             <div class="card shadow-sm mb-4 bg-white rounded">
-              <img src="/img/cards/Marsella.png" class="card-img-top" alt="...">
+              <img src="/img/cards/Marsella.png" class="card-img-top" alt="Puerto Vieux">
               <div class="card-body">
                 <h5 class="card-title">Puerto Vieux</h5>
                 <span class="texto_responsive card-text"
-                  data-desktoptext="No de los lugares típicos de Francia donde han transcurrido 16 siglos de historia de esta ciudad. Por ser un punto estratégico está muy bien resguardado. De hecho está vigilado por dos fuertes: el de San Nicolás y el de San Juan. En ..."
-                  data-tablettext="No de los lugares típicos de Francia donde han transcurrido 16 siglos de historia de esta ciudad. Por ser un punto estratégico está muy bien resguardado ..."
+                  data-desktoptext="Uno de los lugares típicos de Francia donde han transcurrido 16 siglos de historia de esta ciudad. Por ser un punto estratégico está muy bien resguardado. De hecho está vigilado por dos fuertes: el de San ..."
+                  data-tablettext="Uno de los lugares típicos de Francia donde han transcurrido 16 siglos de historia de esta ciudad. Por ser un punto estratégico está muy bien resguardado ..."
                   data-phonetext="Cuenta el mito de la Fontana de Trevi que aquellos que tiran una moneda regresarán en el futuro ..."></span><br>
                 <p class="text-muted"> ...ver más</p>
-                <img src="/img/flags/germany.svg" width="50px" height="50px" alt="">
+                <img src="/img/flags/France.svg" width="50px" height="50px" alt="">
                 <div class="d-flex align-items-center justify-content-between pt-3" id="b-items">
                   <i class="far fa-clock"><span class="pl-2">Hace 9hrs</span></i>
                   <a href="404.html" class="btn btn-primary" id="b-items">Ver más</a>
@@ -329,15 +334,15 @@
           <nav aria-label="Page navigation example">
             <ul class="pagination">
               <li class="page-item">
-                <a class="page-link" href="#" aria-label="Previous">
+                <a class="page-link" href="404.html" aria-label="Previous">
                   <span aria-hidden="true">&laquo;</span>
                 </a>
               </li>
               <li class="page-item"><a class="page-link" href="#">1</a></li>
-              <li class="page-item"><a class="page-link" href="#">2</a></li>
-              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="404.html">2</a></li>
+              <li class="page-item"><a class="page-link" href="404.html">3</a></li>
               <li class="page-item">
-                <a class="page-link" href="#" aria-label="Next">
+                <a class="page-link" href="404.html" aria-label="Next">
                   <span aria-hidden="true">&raquo;</span>
                 </a>
               </li>
@@ -347,7 +352,7 @@
         <!--Pagination Ends-->
       </div>
       <!--Search-->
-      <div class="col-sm-12 col-md-3 mb-4">
+      <div class="col-sm-12 col-md-4 col-xl-3 mb-4">
         <!-- Search Widget -->
         <div class="card mb-5">
           <h5 class="card-header">Buscar</h5>
@@ -355,7 +360,7 @@
             <div class="input-group">
               <input type="text" class="form-control" placeholder="Que desea buscar?">
               <span class="input-group-btn">
-                <button class="btn btn-secondary ml-3" type="button">Ir!</button>
+                <a href="404.html"><button class="btn btn-secondary ml-3" type="button">Ir!</button></a>
               </span>
             </div>
           </div>
@@ -368,26 +373,26 @@
               <div class="col-sm-6">
                 <ul class="list-unstyled mb-0">
                   <li>
-                    <h6><a href="">Categoria 1</a></h6>
+                    <h6><a href="404.html">Populares</a></h6>
                   </li>
                   <li>
-                    <h6><a href="">Categoria 1</a></h6>
+                    <h6><a href="404.html">Menos visitados</a></h6>
                   </li>
                   <li>
-                    <h6><a href="">Categoria 1</a></h6>
+                    <h6><a href="404.html">Playas</a></h6>
                   </li>
                 </ul>
               </div>
               <div class="col-sm-6">
                 <ul class="list-unstyled mb-0">
                   <li>
-                    <h6><a href="">Categoria 1</a></h6>
+                    <h6><a href="404.html">En pareja</a></h6>
                   </li>
                   <li>
-                    <h6><a href="">Categoria 1</a></h6>
+                    <h6><a href="404.html">Viaja solo</a></h6>
                   </li>
                   <li>
-                    <h6><a href="">Categoria 1</a></h6>
+                    <h6><a href="404.html">Entretenimientos</a></h6>
                   </li>
                 </ul>
               </div>
@@ -396,7 +401,7 @@
         </div>
         <!--Advertising-->
         <div class="mt-5 pt-4 d-none d-md-block ">
-          <a href="404.html"><img class="w-100" src="/img/Advertising.png" alt=""></a>
+          <a href="404.html"><img class="w-100" src="/img/Advertising.png" alt=" propaganda "></a>
         </div>
         <!-- /.Advertising-->
       </div>
@@ -443,31 +448,30 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-12 col-md-4 text-center">
-          <a href="#" class="text-decoration-none">
+          <a href="index.html" class="text-decoration-none">
             <img src="img/logo.png" alt="Logo" width="30" height="30">
             <p class="lead text-decoration-none text-light">Travel the World</p>
           </a>
         </div>
         <div class="col-sm-12 col-md-4">
           <p><strong>Informacion Básica</strong></p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, similique!</p>
+          <p>Te daremos los mejores consejos para que tengas una experiencia increible.</p>
         </div>
         <div class="col-sm-12 col-md-4">
           <p><strong>Encontranos En:</strong></p>
-          <a href="#" class="text-decoration-none text-light">
+          <a href="404.html" class="text-decoration-none text-light">
             <i class="fab fa-facebook-f fa-2x p-2 facebook"></i>
           </a>
-          <a href="#" class="text-decoration-none text-light">
+          <a href="404.html" class="text-decoration-none text-light">
             <i class="fab fa-twitter fa-2x p-2 twitter"></i>
           </a>
-          <a href="#" class="text-decoration-none text-light">
+          <a href="404.html" class="text-decoration-none text-light">
             <i class="fab fa-instagram fa-2x p-2 instagram"></i>
           </a>
         </div>
       </div>
     </div>
-    <hr>
-    <div>
+    <div class="mt-2">
       <p class="text-center">&copy; Todos los derechos reservados al Grupo 1</p>
     </div>
   </footer>
@@ -485,12 +489,3 @@
 </body>
 
 </html>
-<!--------------------------->
-<!--         TASK          -->
-<!--------------------------->
-<!--    
-****** IMPORTANT ******
-    ~ AGREGAR ALT EN TODAS LAS IMAGENES
-
-
--->

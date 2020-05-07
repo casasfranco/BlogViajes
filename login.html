@@ -4,12 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Viajes</title>
-    <!--ADD METAS-->
+    <meta name="author" content="Alvaro Valenzuela, Micaela Garcia Cardenas, Daniel Rodolfo Lopez Sardi, Franco Casas">
+    <meta name="description" content="Te llevamos por el mundo desde tu casa!">
+    <meta name="keywords" content="blog,Blog,Viajes,viajes">
+    <title>Login</title>
+    <!--Link css-->
     <link rel="stylesheet" href="css/style.css">
+    <!--Fontawesome-->
+    <script src="https://kit.fontawesome.com/5123056da0.js" crossorigin="anonymous"></script>
+    <!--Link Bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/ea866217b0.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -23,7 +28,6 @@
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
 
@@ -50,16 +54,15 @@
     <!--BreadCrumb-->
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb text-dark">
-            <li class="breadcrumb-item"><a href="#"><i class="fas fa-home pr-2"></i>Inicio</a></li>
+            <li class="breadcrumb-item"><a href="index.html"><i class="fas fa-home pr-2"></i>Inicio</a></li>
             <li class="breadcrumb-item active" aria-current="page">Login</li>
         </ol>
     </nav>
-    </section>
     <!--BreadCrumb ends-->
     <section class="container my-6">
         <article class="row">
             <div class="col-sm-12 col-md-6 ">
-                <img src="img/patagonia.jpg" alt="local cocu" class="mt-4 w-100">
+                <img src="img/patagonia.jpg" alt="montaña san martin de los andes" class="mt-4 w-100">
                 <h4>San Martin de los Andes, Neuquen. Argentina.</h4>
             </div>
             <div class="col-sm-12 col-md-6">
@@ -85,29 +88,28 @@
                     <button type="Submit" class="btn btn-primary container">Log In</button>
                     <hr>
                     <small id="emailHelp" class="form-text text-muted text-center active mb-2">O continúa con:</small>
-                        <a class="btn btn-primary btn-md w-100 mb-3" id="google-button" href="404.html" role="button" >
-                            <i class="fab fa-google-plus-g"></i><span class="pl-2">Continuar con Google</span>
-                        </a>
-                        <a class="btn btn-md w-100" id="facebook-button" href="404.html" role="button" >
-                            <i class="fab fa-facebook"></i><span class="pl-2">Continuar con Facebook</span>
-                        </a>
+                    <a class="btn btn-primary btn-md w-100 mb-3" id="google-button" href="404.html" role="button">
+                        <i class="fab fa-google-plus-g"></i><span class="pl-2">Continuar con Google</span>
+                    </a>
+                    <a class="btn btn-md w-100" id="facebook-button" href="404.html" role="button">
+                        <i class="fab fa-facebook"></i><span class="pl-2">Continuar con Facebook</span>
+                    </a>
                 </form>
                 <hr>
             </div>
         </article>
     </section>
-    <div class="row mt-5">
-        <div class="col-sm-12">
-            <form class="shadow py-3 mb-5 bg-light rounded container">
-                <div class="container mt-2 text-center">
-                    <video class="dtVideo w-100" muted="" preload="yes" autoplay=" " loop="">
-                        <source
-                            src="https://azcdn.odyssey.pgsitecore.com/es-ar/-/media/Pantene_AR/Images/MP4-Files/home banner_desktop_ARG.mp4?la=es-AR&amp;v=1-201904091313"
-                            type="video/mp4">
-                    </video>
-                </div>
-            </form>
-        </div>
+    <!-- Ads -->
+    <div class="col-sm-12">
+        <form class="shadow py-3 mb-5 bg-light rounded container">
+            <div class="container mt-2 text-center">
+                <video class="dtVideo w-100" muted="" preload="yes" autoplay=" " loop="">
+                    <source
+                        src="https://azcdn.odyssey.pgsitecore.com/es-ar/-/media/Pantene_AR/Images/MP4-Files/home banner_desktop_ARG.mp4?la=es-AR&amp;v=1-201904091313"
+                        type="video/mp4">
+                </video>
+            </div>
+        </form>
     </div>
     <!-- Modal cambiar contraseña -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
@@ -152,36 +154,70 @@
         </div>
     </div>
     <a href="#top" id="myBtn"><i class="fas fa-arrow-circle-up fa-2x"></i></a>
+
+    <!-- Modal subscribirse-->
+    <div class="modal fade" id="example-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title lead" id="exampleModalLabel">SUSCRIBIRSE</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1"></label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Enter Email">
+
+                            <small id="emailHelp" class="form-text text-muted">Ingresar correo electrónico válido.
+                                Suscríbete para recibír notificaciones semanales.</small>
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Activar notificaciones</label>
+                        </div>
+                        <button type="Submit" class="btn btn-warning">Suscribirse</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Salir</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!--Footer-->
     <footer class="text-light py-4 piedepagina text-center">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-md-4 text-center">
-                    <a href="#" class="text-decoration-none">
+                    <a href="index.html" class="text-decoration-none">
                         <img src="img/logo.png" alt="Logo" width="30" height="30">
                         <p class="lead text-decoration-none text-light">Travel the World</p>
                     </a>
                 </div>
                 <div class="col-sm-12 col-md-4">
                     <p><strong>Informacion Básica</strong></p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, similique!</p>
+                    <p>Te daremos los mejores consejos para que tengas una experiencia increible.</p>
                 </div>
                 <div class="col-sm-12 col-md-4">
                     <p><strong>Encontranos En:</strong></p>
-                    <a href="#" class="text-decoration-none text-light">
+                    <a href="404.html" class="text-decoration-none text-light">
                         <i class="fab fa-facebook-f fa-2x p-2 facebook"></i>
                     </a>
-                    <a href="#" class="text-decoration-none text-light">
+                    <a href="404.html" class="text-decoration-none text-light">
                         <i class="fab fa-twitter fa-2x p-2 twitter"></i>
                     </a>
-                    <a href="#" class="text-decoration-none text-light">
+                    <a href="404.html" class="text-decoration-none text-light">
                         <i class="fab fa-instagram fa-2x p-2 instagram"></i>
                     </a>
                 </div>
             </div>
         </div>
-        <hr>
-        <div>
+        <div class="mt-2">
             <p class="text-center">&copy; Todos los derechos reservados al Grupo 1</p>
         </div>
     </footer>
