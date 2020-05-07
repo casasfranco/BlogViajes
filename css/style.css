@@ -2,6 +2,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  padding-top: 56px;
+}
+
 .navbar {
   background-color: #040740;
 }
@@ -106,10 +110,9 @@ html {
   }
 }
 
-
-@media (max-width: 768px){
+@media (max-width: 768px) {
   #myBtn {
-  display: none;
+    display: none;
   }
   #form-image {
     margin-left: 130px;
