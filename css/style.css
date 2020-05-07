@@ -2,6 +2,11 @@ html {
   scroll-behavior: smooth;
 }
 
+a:link {color:#ffffff;}
+a:visited {color:#ffffff;}
+a:active {color:#ffffff;}
+a:hover {color:#ffffff;}
+
 .navbar {
   padding: 30px;
   background-color: #040740;
@@ -65,11 +70,6 @@ html {
   filter: opacity(60%);
 }
 
-#google-button {
-  background-color: blue;
-  color: white;
-  margin: 4px;
-}
 
 #google-button:hover {
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
@@ -79,7 +79,6 @@ html {
 #facebook-button {
   background-color: #02042a;
   color: white;
-  margin: 4px;
 }
 
 #facebook-button:hover {
@@ -135,6 +134,7 @@ html {
   #title-sm {
     font-size: 45px;
   }
+  
 }
 
 
